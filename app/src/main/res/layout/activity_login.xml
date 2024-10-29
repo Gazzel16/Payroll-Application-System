@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="0dp"
+        android:background="#4DB6AC"> <!-- Use your desired background color -->
+
+        <!-- Image at the top of the form -->
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="322dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/login1" /> <!-- Ensure the image is added to your drawable -->
+
+        <!-- CardView containing the form -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Sign Up Text -->
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LogIn"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_grey"
+                    android:elevation="2dp"
+                    android:backgroundTint="@color/light_gray"
+                    android:layout_gravity="center" />
+
+                <!-- Email input field for sign-up -->
+
+                <!-- Password input field -->
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:background="@drawable/custom_edittext"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_grey"
+                    android:elevation="2dp"
+                    android:backgroundTint="@color/light_gray"
+                    android:layout_gravity="center" />
+
+                <!-- Sign Up button -->
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="32dp"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:elevation="4dp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/loginTextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Dont have an account yet? Signup"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

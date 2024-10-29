@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEmployeesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#f5f5f5">
+
+        <!-- Employee List -->
+        <ListView
+            android:id="@+id/employeeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:background="#ffffff"
+            android:elevation="4dp"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Edit Employee Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Employee"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="#dcdcdc"
+            android:paddingLeft="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editEmployeeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee Name"
+            android:inputType="textPersonName"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salary"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/updateEmployeeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#fff"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/deleteEmployeeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:backgroundTint="#F44336"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

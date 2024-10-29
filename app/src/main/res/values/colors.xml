@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Colors -->
+    <color name="black">#FF000000</color> <!-- Standard Black -->
+    <color name="white">#FFFFFFFF</color> <!-- White for lighter text -->
+    <color name="purple">#512DA8</color>  <!-- Deep Purple (more vibrant) -->
+    <color name="text_grey">#4E4E4E</color> <!-- Dark Gray for text (alternative to black) -->
+
+    <!-- Background Colors -->
+    <color name="teal_background">#4DB6AC</color> <!-- Teal, inspired by the image background -->
+    <color name="light_gray">#F5F5F5</color> <!-- Light gray for a subtle neutral background -->
+    <color name="soft_mint">#A7FFEB</color>
+
+    <!-- Light Colors -->
+    <color name="lightBackground">#FAFAFA</color>
+    <color name="lightPrimary">#FFCCBC</color> <!-- Light orange-pink -->
+    <color name="lightAccent">#B3E5FC</color> <!-- Light blue -->
+    <color name="lightTextPrimary">#757575</color> <!-- Soft dark gray for text -->
+    <color name="lightTextSecondary">#BDBDBD</color> <!-- Light gray for secondary text -->
+    <color name="lightButtonGreen">#A5D6A7</color> <!-- Light green for button background -->
+    <color name="lightButtonOrange">#FFE0B2</color> <!-- Light orange for button background -->
+    <color name="lightCardBackground">#FFFFFF</color> <!-- White for CardView background -->
+    <color name="lightDivider">#E0E0E0</color>
+</resources>
